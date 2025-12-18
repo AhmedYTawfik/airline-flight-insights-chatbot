@@ -13,109 +13,55 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Enhanced CSS with proper z-index for interactivity
+# Simple and clean CSS
 st.markdown("""
 <style>
-    /* Import Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
-    
-    * {
-        font-family: 'Inter', sans-serif;
-    }
-    
     /* Hide Streamlit branding */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     
-    /* Animated gradient background */
+    /* Clean background */
     .stApp {
-        background: linear-gradient(-45deg, #0f172a, #1e1b4b, #312e81, #1e3a8a);
-        background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite;
+        background: linear-gradient(135deg, #1e293b, #334155);
     }
     
-    @keyframes gradientShift {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-    
-    /* Glass effect cards */
+    /* Simple card styling */
     .glass-card {
         background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
+        border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 2rem;
+        padding: 1.5rem;
         margin: 1rem 0;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease;
-        animation: slideUp 0.6s ease-out;
     }
     
-    @keyframes slideUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    /* Glowing title */
+    /* Simple title */
     .main-title {
-        font-size: 4rem;
-        font-weight: 800;
+        font-size: 2.5rem;
+        font-weight: 700;
         text-align: center;
-        background: linear-gradient(120deg, #a78bfa, #ec4899, #60a5fa);
-        background-size: 200% auto;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: shine 3s linear infinite;
-        margin-bottom: 1rem;
-        text-shadow: 0 0 40px rgba(167, 139, 250, 0.5);
-    }
-    
-    @keyframes shine {
-        to {
-            background-position: 200% center;
-        }
+        color: #a78bfa;
+        margin-bottom: 0.5rem;
     }
     
     /* Subtitle */
     .subtitle {
         text-align: center;
-        font-size: 1.3rem;
-        color: #c4b5fd;
-        margin-bottom: 2rem;
-        animation: fadeIn 1s ease-in;
+        font-size: 1rem;
+        color: #94a3b8;
+        margin-bottom: 1.5rem;
     }
     
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    
-    /* Icon container */
+    /* Simple icon */
     .icon-container {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 2rem;
-        background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-        border-radius: 25px;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 1rem;
+        background: #6366f1;
+        border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3rem;
-        animation: pulse 2s ease-in-out infinite;
-        box-shadow: 0 0 60px rgba(139, 92, 246, 0.6);
-    }
-    
-    @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.05); }
+        font-size: 2rem;
     }
     
     /* Ensure all Streamlit widgets are interactive */
@@ -125,24 +71,20 @@ st.markdown("""
         pointer-events: auto;
     }
     
-    /* Custom buttons */
+    /* Simple buttons */
     .stButton > button {
-        background: linear-gradient(135deg, #8b5cf6, #3b82f6) !important;
+        background: #6366f1 !important;
         color: white !important;
         border: none !important;
-        border-radius: 12px !important;
-        padding: 0.75rem 2rem !important;
-        font-weight: 600 !important;
-        font-size: 1.1rem !important;
-        transition: all 0.3s ease !important;
-        box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4) !important;
+        border-radius: 8px !important;
+        padding: 0.6rem 1.5rem !important;
+        font-weight: 500 !important;
         cursor: pointer !important;
         pointer-events: auto !important;
     }
     
     .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 6px 30px rgba(139, 92, 246, 0.6) !important;
+        background: #4f46e5 !important;
     }
     
     /* Input fields */
@@ -161,19 +103,12 @@ st.markdown("""
         box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2) !important;
     }
     
-    /* Metrics */
+    /* Simple metrics */
     .metric-card {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
-        border-radius: 15px;
-        padding: 1.5rem;
-        border: 1px solid rgba(139, 92, 246, 0.3);
-        transition: all 0.3s ease;
-        animation: slideUp 0.6s ease-out;
-    }
-    
-    .metric-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);
+        background: rgba(139, 92, 246, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        border: 1px solid rgba(139, 92, 246, 0.2);
     }
     
     /* Loading animation */
@@ -198,31 +133,18 @@ st.markdown("""
     }
     
     .loading-text {
-        color: #c4b5fd;
-        font-size: 1.2rem;
+        color: #94a3b8;
+        font-size: 1rem;
         margin: 0.5rem 0;
-        animation: fadeInOut 2s ease-in-out infinite;
     }
     
-    @keyframes fadeInOut {
-        0%, 100% { opacity: 0.4; }
-        50% { opacity: 1; }
-    }
-    
-    /* Result cards */
+    /* Simple result cards */
     .result-card {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
-        border: 2px solid rgba(139, 92, 246, 0.3);
-        border-radius: 15px;
-        padding: 1.5rem;
-        margin: 1rem 0;
-        transition: all 0.3s ease;
-        animation: slideUp 0.8s ease-out;
-    }
-    
-    .result-card:hover {
-        border-color: rgba(139, 92, 246, 0.6);
-        box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
+        background: rgba(139, 92, 246, 0.05);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 0.5rem 0;
     }
     
     /* Tab styling */
@@ -276,13 +198,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Header with animation
+# Simple header
 st.markdown("""
 <div class="icon-container">✈️</div>
 <h1 class="main-title">Flight Insights Assistant</h1>
-<p class="subtitle">
-    🚀 Powered by Graph-RAG • Neo4j Knowledge Graph + Advanced LLMs
-</p>
+<p class="subtitle">Graph-RAG powered flight analysis</p>
 """, unsafe_allow_html=True)
 
 # Sidebar configuration
@@ -328,7 +248,7 @@ user_query = st.text_area(
     label_visibility="collapsed"
 )
 
-col1, col2, col3 = st.columns([2, 1, 1])
+col1, col2 = st.columns([2, 1])
 with col1:
     submit_button = st.button("🚀 Get Insights", type="primary", use_container_width=True)
 with col2:
@@ -629,7 +549,7 @@ st.markdown("""
         <span class='badge'>Neo4j Knowledge Graph</span>
         <span class='badge'>Graph-RAG</span>
         <span class='badge'>Advanced LLMs</span>
-    </div>
+    </div>    git push origin main
     <p style='margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;'>
         German University in Cairo - Milestone 3
     </p>
