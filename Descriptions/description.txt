@@ -1,0 +1,83 @@
+1. Core Objective
+
+Goal: Build an end-to-end Graph-RAG Travel Assistant using the Neo4j Knowledge Graph (KG) from Milestone 2 as a grounding mechanism for an LLM-based system.
+
+
+Mechanism: Retrieve relevant nodes, relationships, and reviews from the KG to guide the LLM's final answer, reducing hallucinations and increasing factual accuracy.
+
+
+2. Input Preprocessing
+a. Intent Classification: Classify user intent (e.g., question, recommendation, search) to route the query to the correct retrieval strategy . Use rule-based (keyword) or LLM-based classification.
+
+
+b. Entity Extraction: Use Named Entity Recognition (NER) to extract theme-specific entities (e.g., flights, airports, passengers) to parameterize Cypher queries .
+
+c. Input Embedding: Convert text input into vector representations for semantic similarity search (only required if implementing embedding-based retrieval) .
+
+3. Graph Retrieval Layer (Two Experiments Required)
+Experiment 1 (Baseline):
+
+Use Cypher queries to fetch structured information .
+
+Create a library of at least 10 different Cypher query templates covering various intents and entity combinations .
+
+Experiment 2 (Embeddings):
+
+Implement semantic similarity search using vector embeddings .
+
+
+Models: Experiment with at least two different embedding models.
+
+
+Approach: Choose either Node Embeddings (vector for each node) or Features Vector Embeddings (combined properties into one vector) .
+
+4. LLM Layer
+a. Context Merging: Combine results from both Cypher queries and embedding-based retrieval into a unified, de-duplicated context .
+
+b. Structured Prompting: Use a prompt structure containing:
+
+
+Context: The retrieved KG data.
+
+
+Persona: Define a role (e.g., "You are a flight information assistant").
+
+
+Task: Clear instructions (e.g., "Answer using only provided information").
+
+c. Model Comparison: Test and compare at least three different LLMs (e.g., GPT-4, Gemini, Llama) .
+
+d. Evaluation: Provide both Quantitative (accuracy, response time, cost) and Qualitative (naturalness, relevance, correctness) metrics .
+
+5. User Interface (UI)
+
+Framework: Use Streamlit to create a functional and intuitive interface .
+
+Mandatory Features:
+
+View the raw KG-retrieved context for transparency .
+
+View the final LLM-generated answer .
+
+
+Optional Features: Display executed Cypher queries, graph visualization snippets, or a model selection dropdown .
+
+6. Airline Theme Considerations
+
+Perspective: The application must be from the airline company’s perspective, not the passengers’ (e.g., gaining insights into poorly rated flights) .
+
+
+Focus: Routes, delays, passenger satisfaction, and journey analysis across airports and passenger classes .
+
+7. Final Deliverables/Presentation Requirements
+
+System Architecture: Document the design with architecture diagrams .
+
+
+Retrieval Strategy: Explain Cypher and embedding approaches with example queries .
+
+
+Comparison Analysis: Present the metrics comparing the three+ tested LLM models.
+
+
+Analysis of Failures: Include error analysis and remaining system limitations
