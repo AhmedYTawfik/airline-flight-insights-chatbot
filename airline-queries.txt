@@ -1,0 +1,82 @@
+Intent 1: Operational Delay Diagnostics
+
+1- Which ${x} destination stations have the highest total accumulated arrival delay minutes across all incoming flights?
+
+note: x is a number e.g. 5.
+
+2- Which ${x} destination stations have the lowest total accumulated arrival delay minutes across all incoming flights?
+
+note: x is a number e.g. 5.
+
+3- Which ${x} origin stations have the highest total accumulated arrival delay minutes across all outgoing flights?
+
+note: x is a number e.g. 5.
+
+4- Which ${x} origin stations have the lowest total accumulated arrival delay minutes across all outgoing flights?
+
+note: x is a number e.g. 5.
+
+5- For all flights originating from ${origin_station_code}, list the routes (Origin to Destination) that have an average delay exceeding ${x} minutes.
+
+note: origin_station_code is a 3 letter string like 'LAX', x is a number i.e. 30.
+
+6- What is the average arrival delay for flights with ${x} legs?
+
+note: x is 1, 2 or 3.
+
+-------------------------------------------------------------------------------------------------
+Intent 2: Service Quality & Product Optimization
+
+7- Identify all routes where the average 'food_satisfaction_score' in ${class_name} Class is lower than ${threshold}.
+
+note: class_name is a traveller class type like ("Economy", "Business", etc), threshold is a number i.e. 2.0.
+
+8- List the flight numbers for journeys longer than ${x} miles where the food satisfaction was rated as 1.
+
+note: x is a number e.g. 4,000.
+
+-------------------------------------------------------------------------------------------------
+Intent 3: Fleet Performance Monitoring
+
+9- Which aircraft type (fleet_type_description) has the highest frequency of arrival delays over ${x} minutes?
+
+note: x is a number e.g. 60.
+
+10- What is the average food satisfaction score for passengers flying on the ${x} fleet?
+
+note: x is a fleet type like ('B787-10', 'B737-800', 'ERJ-175', etc)
+
+11- For the ${x} fleet, calculate the average actual flown miles. 
+
+note: x is a fleet type like ('B787-10', 'B737-800', 'ERJ-175', etc)
+
+12- For the ${x} fleet, calculate the percentage of those flights that arrived early (negative delay)
+
+note: x is a fleet type like ('B787-10', 'B737-800', 'ERJ-175', etc)
+
+-------------------------------------------------------------------------------------------------
+Intent 4: High-Value Customer (Loyalty) Retention
+
+13- What is the average arrival delay specifically for ${loyalty_program_level} passengers across the entire network?
+
+note: loyalty_program_level is the passenger type like ('Premier Gold', 'Premier Silver', etc)
+
+14- Find all ${loyalty_program_level} passengers who experienced a delay of more than ${x} minutes.
+
+note: loyalty_program_level is the passenger type like ('Premier Gold', 'Premier Silver', etc), x is a number e.g. 60.
+
+-------------------------------------------------------------------------------------------------
+Intent 5: Demographic Market Analysis
+
+15- Which aircraft type is most commonly used by ${generation} for journeys exceeding ${threshold} miles?
+
+note: generation is a generation type like ('Millennials', 'Boomer', etc), threshold is a number e.g. 3,000.
+
+16- Which fleet_type_description is most frequently used by ${generation}?
+
+note: generation is a generation type like ('Millennials', 'Boomer', etc)
+
+17- Identify the top ${x} destination stations with the highest volume of ${generation} passengers.
+
+note: generation is a generation type like ('Millennials', 'Boomer', etc), x is a number e.g. 5.
+
