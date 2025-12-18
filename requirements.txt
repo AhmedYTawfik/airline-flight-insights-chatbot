@@ -1,0 +1,36 @@
+# Core dependencies
+pip>=25.0
+setuptools>=57.0
+wheel>=0.45
+
+# PDF processing
+pypdf>=6.0.0
+
+# Machine Learning & NLP
+sentence-transformers>=5.0.0
+numpy>=1.26.0
+faiss-cpu>=1.13.0
+
+# Hugging Face
+huggingface_hub>=0.36.0
+
+# LangChain
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-text-splitters>=0.3.0
+
+# Pydantic
+pydantic>=2.0.0
+
+# Optional: TensorFlow (if needed)
+# tensorflow>=2.13.0
+# tensorflow-intel>=2.13.0
+# typing-extensions>=4.15.0
+
+# Streamlit App
+streamlit
+pandas
+plotly
+networkx
