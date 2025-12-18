@@ -1,0 +1,137 @@
+[
+  {
+    "model": "Mistral",
+    "question": "Which hotels are in Paris?",
+    "response": " Based on the context provided, there are two hotels in Paris mentioned: Hotel Le Grand with a rating of 4.5, and Hotel Petit with a rating of 4.2.",
+    "time": 2.467878818511963,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 28
+  },
+  {
+    "model": "Llama3",
+    "question": "Which hotels are in Paris?",
+    "response": "Two hotels are mentioned in Paris: \n\n1. Hotel Le Grand with a rating of 4.5\n2. Hotel Petit with a rating of 4.2",
+    "time": 1.302032232284546,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 23
+  },
+  {
+    "model": "Gemma",
+    "question": "Which hotels are in Paris?",
+    "response": "Based on the provided information, the hotels located in Paris are:\n\n* **Hotel Le Grand** with a rating of 4.5\n* **Hotel Petit** with a rating of 4.2 \n",
+    "time": 0.8234708309173584,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 28
+  },
+  {
+    "model": "Mistral",
+    "question": "What is the highest rated hotel?",
+    "response": " Based on the context provided, the highest rated hotel is Hotel Berlin in Berlin with a rating of 4.7.",
+    "time": 1.9450404644012451,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 19
+  },
+  {
+    "model": "Llama3",
+    "question": "What is the highest rated hotel?",
+    "response": "Based on the provided context, the highest rated hotel is Hotel Berlin, located in Berlin, with a rating of 4.7.",
+    "time": 0.9709334373474121,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 20
+  },
+  {
+    "model": "Gemma",
+    "question": "What is the highest rated hotel?",
+    "response": "The highest rated hotel is Hotel Berlin with a rating of 4.7. \n",
+    "time": 0.619502067565918,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 12
+  },
+  {
+    "model": "Mistral",
+    "question": "Are there hotels in Rome?",
+    "response": " I'm glad you asked, but unfortunately, the context provided does not include any information about hotels in Rome. Therefore, I cannot answer that question based on the information given.",
+    "time": 2.289339303970337,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 29
+  },
+  {
+    "model": "Llama3",
+    "question": "Are there hotels in Rome?",
+    "response": "Unfortunately, I don't have any information about hotels in Rome. The context only provides information about hotels in Paris (Hotel Le Grand and Hotel Petit) and Berlin (Hotel Berlin), but it does not mention any hotels in Rome.",
+    "time": 1.3521227836608887,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 38
+  },
+  {
+    "model": "Gemma",
+    "question": "Are there hotels in Rome?",
+    "response": "The provided context lists hotels in Paris, but doesn't include any information about Rome. So, based on this context, we don't know if there are hotels in Rome. \n",
+    "time": 0.6681795120239258,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 28
+  },
+  {
+    "model": "Mistral",
+    "question": "What amenities does Hotel Le Grand offer?",
+    "response": " Based on the context provided, Hotel Le Grand offers the following amenities: WiFi, Pool, and Spa.",
+    "time": 1.829446792602539,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 16
+  },
+  {
+    "model": "Llama3",
+    "question": "What amenities does Hotel Le Grand offer?",
+    "response": "Hotel Le Grand offers several amenities, including:\n\n1. WiFi\n2. A Pool\n3. A Spa",
+    "time": 1.1399691104888916,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 15
+  },
+  {
+    "model": "Gemma",
+    "question": "What amenities does Hotel Le Grand offer?",
+    "response": "Hotel Le Grand offers WiFi, a pool, and a spa. \n",
+    "time": 0.680201530456543,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 10
+  },
+  {
+    "model": "Mistral",
+    "question": "Which hotel is most affordable?",
+    "response": " Based on the context provided, Hotel Petit is the most affordable with a nightly rate of $150.",
+    "time": 1.949289083480835,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 17
+  },
+  {
+    "model": "Llama3",
+    "question": "Which hotel is most affordable?",
+    "response": "Based on the context, the most affordable hotel option is Hotel Petit, which costs $150/night. This is lower than the prices of Hotel Le Grand ($200/night) and Hotel Berlin ($180/night).",
+    "time": 1.3102262020111084,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 30
+  },
+  {
+    "model": "Gemma",
+    "question": "Which hotel is most affordable?",
+    "response": "Hotel Petit is the most affordable, costing $150 per night. \n",
+    "time": 0.619753360748291,
+    "success": true,
+    "error": null,
+    "tokens_estimate": 10
+  }
+]
