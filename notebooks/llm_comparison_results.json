@@ -1,137 +1,140 @@
-[
-  {
-    "model": "Mistral",
-    "question": "Which hotels are in Paris?",
-    "response": " Based on the context provided, there are two hotels in Paris mentioned: Hotel Le Grand with a rating of 4.5, and Hotel Petit with a rating of 4.2.",
-    "time": 2.7514710426330566,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 28
-  },
-  {
-    "model": "Llama3",
-    "question": "Which hotels are in Paris?",
-    "response": "According to the provided context, the hotels located in Paris are:\n\n1. Hotel Le Grand - with a rating of 4.5\n2. Hotel Petit - with a rating of 4.2",
-    "time": 1.2258594036102295,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 30
-  },
-  {
-    "model": "Gemma",
-    "question": "Which hotels are in Paris?",
-    "response": "The hotels in Paris mentioned in the context are Hotel Le Grand and Hotel Petit. \n",
-    "time": 0.7382838726043701,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 15
-  },
-  {
-    "model": "Mistral",
-    "question": "What is the highest rated hotel?",
-    "response": " Based on the context provided, Hotel Berlin in Berlin has the highest rating with a score of 4.7.",
-    "time": 1.8386049270629883,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 18
-  },
-  {
-    "model": "Llama3",
-    "question": "What is the highest rated hotel?",
-    "response": "According to the information provided, the highest rated hotel is Hotel Berlin, with a rating of 4.7.",
-    "time": 0.8988921642303467,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 17
-  },
-  {
-    "model": "Gemma",
-    "question": "What is the highest rated hotel?",
-    "response": "Hotel Berlin has the highest rating at 4.7. \n",
-    "time": 0.5704424381256104,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 8
-  },
-  {
-    "model": "Mistral",
-    "question": "Are there hotels in Rome?",
-    "response": " Based on the context provided, there is no information about any hotels in Rome. Therefore, I cannot answer that question with certainty. However, I can tell you that Hotel Le Grand and Hotel Petit are located in Paris, France, and Hotel Berlin is located in Berlin, Germany.",
-    "time": 3.6749069690704346,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 47
-  },
-  {
-    "model": "Llama3",
-    "question": "Are there hotels in Rome?",
-    "response": "Unfortunately, I don't have any information about hotels in Rome based on the provided context. The context only mentions three hotels: Hotel Le Grand in Paris with a rating of 4.5, Hotel Petit in Paris with a rating of 4.2, and Hotel Berlin in Berlin with a rating of 4.7.",
-    "time": 1.4957330226898193,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 50
-  },
-  {
-    "model": "Gemma",
-    "question": "Are there hotels in Rome?",
-    "response": "The provided context only mentions hotels in Paris. It does not provide information about hotels in Rome. \n",
-    "time": 0.6118569374084473,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 17
-  },
-  {
-    "model": "Mistral",
-    "question": "What amenities does Hotel Le Grand offer?",
-    "response": " Based on the context provided, Hotel Le Grand offers the following amenities: WiFi, Pool, and Spa.",
-    "time": 1.9727661609649658,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 16
-  },
-  {
-    "model": "Llama3",
-    "question": "What amenities does Hotel Le Grand offer?",
-    "response": "Hotel Le Grand offers WiFi, a Pool, and a Spa.",
-    "time": 0.7940177917480469,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 10
-  },
-  {
-    "model": "Gemma",
-    "question": "What amenities does Hotel Le Grand offer?",
-    "response": "Hotel Le Grand offers WiFi, a pool, and a spa. \n",
-    "time": 0.38437652587890625,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 10
-  },
-  {
-    "model": "Mistral",
-    "question": "Which hotel is most affordable?",
-    "response": " Based on the context provided, Hotel Petit is the most affordable with a nightly rate of $150.",
-    "time": 1.9089736938476562,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 17
-  },
-  {
-    "model": "Llama3",
-    "question": "Which hotel is most affordable?",
-    "response": "Hotel Petit is the most affordable option, with a nightly rate of $150.",
-    "time": 0.8852956295013428,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 13
-  },
-  {
-    "model": "Gemma",
-    "question": "Which hotel is most affordable?",
-    "response": "Hotel Petit is the most affordable, costing $150 per night. \n",
-    "time": 0.415738582611084,
-    "success": true,
-    "error": null,
-    "tokens_estimate": 10
-  }
-]
+{
+  "quantitative_results": [
+    {
+      "model": "Mistral",
+      "question": "What are the top 5 airports with the most delays?",
+      "response": " Based on the context provided, the top 5 destination stations with the highest accumulated arrival delay minutes are CDX (991 minutes), JAX (810 minutes), SIX (661 minutes), FRX (462 minutes), and MUX (326 minutes). Therefore, the top 5 airports with the most delays, according to the information given, are the destinations CDX, JAX, SIX, FRX, and MUX.",
+      "time": 9.484123945236206,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 57
+    },
+    {
+      "model": "Llama3",
+      "question": "What are the top 5 airports with the most delays?",
+      "response": "Based on the provided context, we have a list of destination stations with the highest accumulated arrival delay minutes, but we don't have a list of top 5 airports with the most delays. Insufficient information.",
+      "time": 2.4095170497894287,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 35
+    },
+    {
+      "model": "Gemma",
+      "question": "What are the top 5 airports with the most delays?",
+      "response": "Based on the provided data, the top 5 destinations with the highest accumulated arrival delay minutes are:\n\n1. CDX (991 delay minutes)\n2. JAX (810 delay minutes)\n3. SIX (661 delay minutes)\n4. FRX (462 delay minutes)\n5. MUX (326 delay minutes) \n",
+      "time": 2.3429055213928223,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 42
+    },
+    {
+      "model": "Mistral",
+      "question": "How do Millennials travel compared to Baby Boomers?",
+      "response": " Based on the given context, Millennials and Baby Boomers differ in their travel destination choices with regard to passenger volume. The top 5 destination stations for the Millennial generation have lower passenger volumes compared to those for the Baby Boomer generation. For instance, the top destination for the Millennial generation, IAX, has a passenger volume of 75, while the top destination for the Baby Boomer generation, EWX, has a passenger volume of 269.\n\nAs for the travel behavior, the semantic search results do not provide enough information to make a definitive comparison between Millennials and Baby Boomers. However, we can observe that both generations take flights with similar distances, ranging from 414 to 1754 miles, and the number of legs in their journeys also seems comparable, with 1 to 2 leg(s) per journey. Additionally, the given records show that a mix of both generations can have varying experiences in food quality and flight delays.\n\nMore data is required to make a more precise comparison between Millennials and Baby Boomers in terms of travel behavior.",
+      "time": 9.685659170150757,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 174
+    },
+    {
+      "model": "Llama3",
+      "question": "How do Millennials travel compared to Baby Boomers?",
+      "response": "Based on the given structured query results, there isn't direct comparison between Millennial and Baby Boomer travel behaviors. However, we can see the top 5 destination stations for both generations.\n\nTop 5 destination stations for Millennials (by passenger volume):\n1. IAX (passenger volume: 75)\n2. EWX (passenger volume: 69)\n3. DEX (passenger volume: 43)\n4. ORX (passenger volume: 42)\n5. SFX (passenger volume: 27)\n\nTop 5 destination stations for Baby Boomers (by passenger volume):\n1. EWX (passenger volume: 269)\n2. IAX (passenger volume: 182)\n3. DEX (passenger volume: 146)\n4. ORX (passenger volume: 137)\n5. SFX (passenger volume: 126)\n\nWe can see that both Millennials and Baby Boomers have similar top destination stations (IAX, EWX, DEX, ORX, SFX). However, the passenger volume is significantly higher for Baby Boomers at each of these destinations, indicating a larger number of Baby Boomers traveling to these destinations compared to Millennials.",
+      "time": 4.95813775062561,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 147
+    },
+    {
+      "model": "Gemma",
+      "question": "How do Millennials travel compared to Baby Boomers?",
+      "response": "I cannot answer the question. The provided data only shows the passenger volume for each destination station by generation and doesn't provide information about how Millennials travel compared to Baby Boomers. \n",
+      "time": 1.9123671054840088,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 31
+    },
+    {
+      "model": "Mistral",
+      "question": "Which aircraft type has the best on-time performance?",
+      "response": " Based on the given context, the top aircraft type with the LOWEST average arrival delay is the B767-400, with an average delay of -8.16 minutes. This means that on average, flights operated by this aircraft type arrive 8.16 minutes before the scheduled time. Therefore, the B767-400 is the aircraft type with the best on-time performance according to the provided data.",
+      "time": 4.747964382171631,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 60
+    },
+    {
+      "model": "Llama3",
+      "question": "Which aircraft type has the best on-time performance?",
+      "response": "To find the best on-time performance aircraft types, we first look at the structured query results which list the top 1 aircraft types with the LOWEST average arrival delay. According to this, the B767-400 has the best on-time performance with an average delay of -8.16 minutes.",
+      "time": 2.537472724914551,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 46
+    },
+    {
+      "model": "Gemma",
+      "question": "Which aircraft type has the best on-time performance?",
+      "response": "The aircraft type with the best on-time performance is the A319-100 based on the provided data. \n\nHere's why:\n\n* We are looking for the aircraft type with the LOWEST average arrival delay.\n* We are provided with flight records of both A319-100 and A320-200.\n* The A319-100  flight 1289 arrived 22 minutes early. \n*  The A320-200  flight 1289 arrived 16 minutes late.\n \nI can't include the A320-200 flight 2033 because it is listed as 97 minutes late. \n\n\nLet me know if you have any other questions. \n",
+      "time": 2.374791383743286,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 86
+    },
+    {
+      "model": "Mistral",
+      "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
+      "response": " Based on the context provided, there is only one journey record that matches the specified criteria. Here is the answer:\n\nAnswer: Flight 2411.",
+      "time": 3.3033525943756104,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 23
+    },
+    {
+      "model": "Llama3",
+      "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
+      "response": "Based on the given information, I found two relevant Journey records that match your query:\n\n1. (score: 0.876) Flight 2411 from LAX to IAX operated by B777-200. Passenger is a Millennial with non-elite loyalty level. Economy class, 1379 miles, 3 leg(s), arrived 13 minutes early, average food.\n2. (score: 0.874) Flight 1636 from LAX to IAX operated by B737-900. Passenger is a Millennial with premier silver loyalty level. Economy class, 2288 miles, 1 leg(s), delayed 10 minutes, poor food.\n\nHowever, since you asked for a single flight number, I will provide you with both of them. The flight numbers of the journeys that match your query are 2411 and 1636.",
+      "time": 3.9708917140960693,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 110
+    },
+    {
+      "model": "Gemma",
+      "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
+      "response": "Flight 2411 \n",
+      "time": 4.1177544593811035,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 2
+    },
+    {
+      "model": "Mistral",
+      "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
+      "response": " Based on the context, there are two journeys with flight number 2. The first one is operated by B787-9 and the passenger is a Gen X with a non-elite loyalty level. The second journey with flight number 2 is also operated by B787-9 but the passenger's loyalty level is not specified in the context. Therefore, only the first journey's loyalty level information is available.",
+      "time": 5.173264980316162,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 64
+    },
+    {
+      "model": "Llama3",
+      "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
+      "response": "Based on the provided context, the different loyalty program levels for a journey that has flight number 2 are:\n\n1. Non-elite loyalty level\n2. Gen X (Note: This is not a loyalty level, but rather an age group. It seems to be incorrect as loyalty levels should be distinct categories.)\n\nHowever, considering 'Premier 1k' and 'Premier Platinum' are mentioned as loyalty levels in other context but not in relation to flight 2, these two levels don't apply in the given context.\n\nSo, the only distinct loyalty level for a journey that has flight number 2 is: non-elite loyalty level",
+      "time": 3.567504644393921,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 99
+    },
+    {
+      "model": "Gemma",
+      "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
+      "response": "Based on the context, the loyalty program levels for journey with flight number 2 are:\n\n* **Non-elite** \n* **Premier 1K** \n* **Premier platinum** \n\nPlease note that the context only mentions these levels for passengers on flight number 2. \n",
+      "time": 2.4490156173706055,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 38
+    }
+  ],
+  "qualitative_results": []
+}
