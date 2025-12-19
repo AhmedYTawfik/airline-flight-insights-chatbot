@@ -369,7 +369,7 @@ def generate_single_embedding(text: str, model_key: str = "minilm") -> List[floa
     model = get_embedding_model(model_key)
     return model.encode(text, convert_to_numpy=True).tolist()
 
-def semantic_search_journeys(driver, query_text: str, model_key: str = "minilm", top_k: int = 20) -> List[Dict]:
+def semantic_search_journeys(driver, query_text: str, model_key: str = "minilm", top_k: int = 100) -> List[Dict]:
     """Semantic search on Journey nodes - returns enriched data."""
     query_embedding = generate_single_embedding(query_text, model_key)
     index_name = f"journey_{EMBEDDING_MODELS[model_key]['property_name']}"
@@ -399,7 +399,7 @@ def semantic_search_journeys(driver, query_text: str, model_key: str = "minilm",
         result = session.run(search_query, top_k=top_k, query_embedding=query_embedding)
         return [{**dict(r), "similarity_score": r["score"]} for r in result]
 
-def semantic_search_flights(driver, query_text: str, model_key: str = "minilm", top_k: int = 10) -> List[Dict]:
+def semantic_search_flights(driver, query_text: str, model_key: str = "minilm", top_k: int = 100) -> List[Dict]:
     """Semantic search on Flight nodes."""
     query_embedding = generate_single_embedding(query_text, model_key)
     index_name = f"flight_{EMBEDDING_MODELS[model_key]['property_name']}"
