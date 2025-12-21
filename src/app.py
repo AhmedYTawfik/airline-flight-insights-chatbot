@@ -575,7 +575,7 @@ def main():
         st.markdown('<div class="main-header">✈️ Airline Flight Insights</div>', unsafe_allow_html=True)
         st.markdown('<div class="sub-header">AI-powered flight data analysis using Graph-RAG</div>', unsafe_allow_html=True)
     with col2:
-        if st.button("🔄 Restart", use_container_width=True):
+        if st.button("🔄 Restart session", use_container_width=True):
             st.session_state.messages = []
             st.session_state.contexts = []
             st.rerun()
