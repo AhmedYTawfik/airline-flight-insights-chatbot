@@ -4,137 +4,313 @@
       "model": "Mistral",
       "question": "What are the top 5 airports with the most delays?",
       "response": " Based on the context provided, the top 5 airports with the most accumulated arrival delay minutes are: CDX, JAX, SIX, FRX, and MUX.",
-      "time": 7.616921424865723,
+      "time": 6.104302883148193,
       "success": true,
       "error": null,
       "tokens_estimate": 23
     },
     {
-      "model": "Groq",
-      "question": "What are the top 5 airports with the most delays?",
-      "response": "To answer the question, we need to look at the \"Identify the top 5 origin stations with the highest accumulated arrival delay minutes\" and \"Identify the top 5 destination stations with the highest accumulated arrival delay minutes\" sections of the context.\n\nThe top 5 origin stations with the highest accumulated arrival delay minutes are:\n1. DEX - 1634 minutes\n2. EWX - 964 minutes\n3. MUX - 522 minutes\n4. SFX - 302 minutes\n5. RSX - 269 minutes\n\nThe top 5 destination stations with the highest accumulated arrival delay minutes are:\n1. CDX - 991 minutes\n2. JAX - 810 minutes\n3. SIX - 661 minutes\n4. FRX - 462 minutes\n5. MUX - 326 minutes\n\nHowever, the question asks for the top 5 airports with the most delays, which implies a combination of both origin and destination delays. Since we don't have the exact number of delays for each airport, we can use the total delay minutes as a proxy.\n\nCombining the two lists, the top 5 airports with the most delays are:\n1. DEX (origin: 1634 minutes)\n2. CDX (destination: 991 minutes)\n3. JAX (destination: 810 minutes)\n4. EWX (origin: 964 minutes, but no destination delays in the top 5)\n5. SIX (destination: 661 minutes)\n\nNote that MUX appears in both lists, but its total delay minutes (522 origin + 326 destination = 848 minutes) are less than those of the top 4 airports. Therefore, it is not included in the top 5.",
-      "time": 3.3657469749450684,
-      "success": true,
-      "error": null,
-      "tokens_estimate": 246
-    },
-    {
       "model": "Gemini",
       "question": "What are the top 5 airports with the most delays?",
-      "response": "Based on the information provided, the top 5 destination stations with the highest accumulated arrival delay minutes are:\n1. CDX, total_delay: 991\n2. JAX, total_delay: 810\n3. SIX, total_delay: 661\n4. FRX, total_delay: 462\n5. MUX, total_delay: 326\n\nThe top 5 origin stations with the highest accumulated arrival delay minutes are:\n1. DEX, total_delay: 1634\n2. EWX, total_delay: 964\n3. MUX, total_delay: 522\n4. SFX, total_delay: 302\n5. RSX, total_delay: 269",
-      "time": 3.0543150901794434,
+      "response": "The top 5 destination stations with the highest accumulated arrival delay minutes are: CDX (991), JAX (810), SIX (661), FRX (462), and MUX (326).\nThe top 5 origin stations with the highest accumulated arrival delay minutes are: DEX (1634), EWX (964), MUX (522), SFX (302), and RSX (269).",
+      "time": 2.9199676513671875,
       "success": true,
       "error": null,
-      "tokens_estimate": 71
+      "tokens_estimate": 48
+    },
+    {
+      "model": "Groq",
+      "question": "What are the top 5 airports with the most delays?",
+      "response": "To answer the user's question, we need to analyze the provided context. The context provides two types of information: \n\n1. Structured query results for the top 5 destination and origin stations with the highest accumulated arrival delay minutes.\n2. Semantic search results for Journey and Flight records.\n\nFrom the structured query results, we can see the top 5 destination stations with the highest accumulated arrival delay minutes:\n- CDX: 991 minutes\n- JAX: 810 minutes\n- SIX: 661 minutes\n- FRX: 462 minutes\n- MUX: 326 minutes\n\nAnd the top 5 origin stations with the highest accumulated arrival delay minutes:\n- DEX: 1634 minutes\n- EWX: 964 minutes\n- MUX: 522 minutes\n- SFX: 302 minutes\n- RSX: 269 minutes\n\nHowever, the user's question asks for the top 5 airports with the most delays, which can be interpreted as the airports with the highest total delay minutes, regardless of whether they are origin or destination airports.\n\nCombining the information from both origin and destination stations, we can calculate the total delay minutes for each airport:\n- DEX: 1634 minutes (origin) + no data available for destination\n- CDX: 991 minutes (destination) + no data available for origin\n- JAX: 810 minutes (destination) + no data available for origin\n- SIX: 661 minutes (destination) + no data available for origin\n- EWX: 964 minutes (origin) + no data available for destination\n- MUX: 522 minutes (origin) + 326 minutes (destination) = 848 minutes\n- FRX: 462 minutes (destination) + no data available for origin\n- SFX: 302 minutes (origin) + no data available for destination\n- RSX: 269 minutes (origin) + no data available for destination\n\nBased on the available data, the top 5 airports with the most delays are:\n1. DEX: 1634 minutes\n2. EWX: 964 minutes\n3. CDX: 991 minutes\n4. MUX: 848 minutes (combined origin and destination)\n5. JAX: 810 minutes\n\nNote: The actual ranking might be different if we had the complete data for both origin and destination delay minutes for all airports.",
+      "time": 27.13602352142334,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 336
     },
     {
       "model": "Mistral",
       "question": "How do Millennials travel compared to Baby Boomers?",
-      "response": " Based on the provided context, Millennials and Baby Boomers have some differences in their travel patterns. Millennials tend to use the B737-900 aircraft type less frequently than Baby Boomers for journeys exceeding 1000 miles. The most common aircraft type used by Millennials for journeys exceeding 1000 miles is not identified in the context. However, the most frequently used fleet type for Millennials is also the B737-900.\n\nAs for destinations, the top 5 destination stations for Millennials based on passenger volume are IAX, EWX, DEX, ORX, and SFX. In contrast, the top 5 destination stations for Baby Boomers based on passenger volume are EWX, IAX, DEX, ORX, and SFX. While there is some overlap, the exact passenger volume for each destination station for both generations is not given in the context.\n\nTherefore, Millennials and Baby Boomers have different aircraft type preferences and usage for their travels, but they share some common top destination stations.",
-      "time": 12.749661207199097,
+      "response": " According to the provided context, Millennials and Baby Boomers both use the Boeing 737-900 aircraft type frequently, but the Baby Boomer generation uses it more often for journeys exceeding 1000 miles. The most common fleet type for both generations is the Boeing 737-900. The top 5 destination stations for Millennials based on passenger volume are IAX, EWX, DEX, ORX, and SFX. For Baby Boomers, the top 5 destination stations are EWX, IAX, DEX, ORX, and SFX. However, the passenger volumes at these destinations are higher for Baby Boomers compared to Millennials.\n\nThe context does not provide information about the travel frequency, distance, or preferences between Millennials and Baby Boomers. Therefore, it's not possible to make a definitive statement about how Millennials travel compared to Baby Boomers based on the provided context alone.",
+      "time": 14.242110252380371,
       "success": true,
       "error": null,
-      "tokens_estimate": 153
-    },
-    {
-      "model": "Groq",
-      "question": "How do Millennials travel compared to Baby Boomers?",
-      "response": "Based on the provided context, here are some key differences in travel patterns between Millennials and Baby Boomers:\n\n1. **Aircraft type**: Both Millennials and Baby Boomers most commonly use the B737-900 aircraft type for journeys exceeding 1000 miles, with usage counts of 50 and 154, respectively.\n2. **Fleet type**: The most frequently used fleet type for both generations is also the B737-900, with usage counts of 72 for Millennials and 212 for Baby Boomers.\n3. **Destination stations**: The top 5 destination stations for Millennials are IAX, EWX, DEX, ORX, and SFX, while for Baby Boomers, they are EWX, IAX, DEX, ORX, and SFX. Although there is some overlap, the order of preference differs between the two generations.\n4. **Passenger volume**: Baby Boomers tend to have higher passenger volumes at their preferred destinations, with EWX having a passenger volume of 269 for Baby Boomers compared to 69 for Millennials at EWX.\n\nThese observations suggest that while there are some similarities in travel patterns between Millennials and Baby Boomers, such as the preferred aircraft and fleet types, there are also differences in their destination preferences and travel volumes. However, it's essential to note that these findings are based on a limited dataset and might not be representative of the entire population.",
-      "time": 24.08099102973938,
-      "success": true,
-      "error": null,
-      "tokens_estimate": 209
+      "tokens_estimate": 132
     },
     {
       "model": "Gemini",
       "question": "How do Millennials travel compared to Baby Boomers?",
-      "response": "Here's a comparison of how Millennials and Baby Boomers travel, based on the provided data:\n\n*   **Most Common Aircraft (Journeys > 1000 miles):** Both Millennials and Boomers most commonly use the B737-900.\n*   **Most Frequent Fleet Type:** Both generations most frequently use the B737-900 fleet type.\n*   **Top Destination Stations:**\n    *   **Millennials:** IAX, EWX, DEX, ORX, and SFX\n    *   **Boomers:** EWX, IAX, DEX, ORX, and SFX",
-      "time": 4.445939540863037,
+      "response": "Here's a comparison of how Millennials and Baby Boomers travel, based on the provided data:\n\n*   **Most Common Aircraft (Journeys > 1000 miles):** Both Millennials and Boomers most commonly use the B737-900.\n*   **Most Frequent Fleet Type:** Both Millennials and Boomers most frequently use the B737-900.\n*   **Top 5 Destinations:**\n    *   **Millennials:** IAX, EWX, DEX, ORX, SFX\n    *   **Boomers:** EWX, IAX, DEX, ORX, SFX",
+      "time": 5.958051681518555,
       "success": true,
       "error": null,
-      "tokens_estimate": 66
+      "tokens_estimate": 64
+    },
+    {
+      "model": "Groq",
+      "question": "How do Millennials travel compared to Baby Boomers?",
+      "response": "Based on the provided context, here are some key differences in travel patterns between Millennials and Baby Boomers:\n\n1. **Aircraft type preference**: Both Millennials and Baby Boomers prefer the B737-900 aircraft type for journeys exceeding 1000 miles, with usage counts of 50 and 154, respectively.\n2. **Fleet type preference**: Both generations also prefer the B737-900 fleet type, with usage counts of 72 for Millennials and 212 for Baby Boomers.\n3. **Destination stations**: The top 5 destination stations for Millennials are IAX, EWX, DEX, ORX, and SFX, while for Baby Boomers, they are EWX, IAX, DEX, ORX, and SFX. Although the stations are similar, the order of preference differs.\n4. **Passenger volume**: Baby Boomers have a significantly higher passenger volume than Millennials, with 269 passengers at EWX (the top destination for Boomers) compared to 75 passengers at IAX (the top destination for Millennials).\n\nThese differences suggest that while both generations share some similarities in their travel preferences, Baby Boomers tend to travel more frequently and in larger numbers than Millennials. However, more data would be needed to draw definitive conclusions about their travel habits.",
+      "time": 31.716394662857056,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 183
     },
     {
       "model": "Mistral",
       "question": "Which aircraft type has the best on-time performance?",
-      "response": " Based on the context provided, the top 5 aircraft types with the LOWEST average arrival delay (best on-time performance) are:\n1. B767-400, avg_delay: -8.16\n2. B737-MAX9, avg_delay: -6.36\n3. ERJ-170, avg_delay: -5.22\n4. B737-900, avg_delay: -4.49\n5. B787-10, avg_delay: -4.46\n\nTherefore, the answer to the user's question is that the aircraft types with the best on-time performance, as determined from the context, are the B767-400, B737-MAX9, ERJ-170, B737-900, and B787-10.",
-      "time": 12.279706716537476,
+      "response": " Based on the context provided, the top 5 aircraft types with the LOWEST average arrival delay are: B767-400, B737-MAX9, ERJ-170, B737-900, and B787-10. The first one, B767-400, has the LOWEST average delay (-8.16 minutes). Therefore, the aircraft type with the best on-time performance is the B767-400.",
+      "time": 7.902035236358643,
       "success": true,
       "error": null,
-      "tokens_estimate": 70
-    },
-    {
-      "model": "Groq",
-      "question": "Which aircraft type has the best on-time performance?",
-      "response": "The B767-400 has the best on-time performance with an average arrival delay of -8.16 minutes, meaning it arrives approximately 8 minutes early on average.",
-      "time": 31.12352728843689,
-      "success": true,
-      "error": null,
-      "tokens_estimate": 24
+      "tokens_estimate": 46
     },
     {
       "model": "Gemini",
       "question": "Which aircraft type has the best on-time performance?",
       "response": "Here are the top 5 aircraft types by on-time arrival percentage:\n- B737-MAX9, on_time_pct: 80.77\n- B757-300, on_time_pct: 80.00\n- ERJ-170, on_time_pct: 78.00\n- B737-MAX8, on_time_pct: 76.92\n- ERJ-175, on_time_pct: 75.80",
-      "time": 3.573796272277832,
+      "time": 3.1317501068115234,
       "success": true,
       "error": null,
       "tokens_estimate": 31
     },
     {
-      "model": "Mistral",
-      "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
-      "response": " Based on the context provided, there are several flights that match the given criteria. Here are the flight numbers with scores above 0.7:\n\n- Flight 2411 operated by B777-200 (score: 0.876)\n- Flight 1636 operated by B737-900 (score: 0.871) (twice)\n- Flight 388 operated by B737-900 (score: 0.861)\n- Flight 2391 operated by B737-MAX9 (score: 0.832) (twice)\n\nYou can choose one of these flights based on additional factors such as departure time or food quality.",
-      "time": 8.089019298553467,
+      "model": "Groq",
+      "question": "Which aircraft type has the best on-time performance?",
+      "response": "The B767-400 has the best on-time performance with an average arrival delay of -8.16 minutes, indicating that on average, flights operated by this aircraft type arrive 8.16 minutes early.",
+      "time": 37.65051817893982,
       "success": true,
       "error": null,
-      "tokens_estimate": 75
+      "tokens_estimate": 29
     },
     {
-      "model": "Groq",
+      "model": "Mistral",
       "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
-      "response": "Based on the provided context, the flight numbers that match the given criteria are:\n\n* Flight 2411\n* Flight 1636 (twice, with different loyalty levels: premier platinum and non-elite)\n* Flight 388 (twice, with different delays and food ratings)\n* Flight 1681\n* Flight 2436 \n* Flight 1427 \n* Flight 2035 (twice, with different loyalty levels and number of legs)\n* Flight 252 \n* Flight 164 \n* Flight 1947 \n* Flight 2380 \n* Flight 2367 \n* Flight 1729 \n* Flight 1282 \n* Flight 2066 \n* Flight 2099 \n* Flight 1845 \n* Flight 1428 \n\nThese are the flight numbers that depart from LAX and arrive at IAX with a passenger generation of 'Millennials'.",
-      "time": 35.99701118469238,
+      "response": " Based on the context, there are several flights that match the given criteria. Here are some of them with their scores and flight numbers:\n\n1. (score: 0.876) Flight 2411 operated by B777-200.\n2. (score: 0.873) Flight 2411 operated by B777-200.\n3. (score: 0.844) Flight 2330 operated by A319-100.\n4. (score: 0.838) Flight 2380 operated by A320-200.\n5. (score: 0.838) Flight 252 operated by B737-800.\n\nYou can choose any of these flights based on your preference, but I recommend checking the specific flight details to ensure it meets all your requirements before making a decision.",
+      "time": 10.36621356010437,
       "success": true,
       "error": null,
-      "tokens_estimate": 112
+      "tokens_estimate": 94
     },
     {
       "model": "Gemini",
       "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
       "response": "Here are some flights from LAX to IAX with Millennial passengers: Flight 2411, Flight 1636, Flight 1414, Flight 2281, Flight 388, Flight 1681, Flight 500, and Flight 2391.",
-      "time": 2.8306519985198975,
+      "time": 2.593146324157715,
       "success": true,
       "error": null,
       "tokens_estimate": 28
     },
     {
-      "model": "Mistral",
-      "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
-      "response": " Based on the context provided, there are two journeys with flight number 2. Each journey has a different passenger with a different loyalty program level.\n\n1. The first journey with flight number 2 was operated by B787-9. The passenger is a Gen X with a non-elite loyalty level.\n2. The second journey with flight number 2 was also operated by B787-9. The passenger is a Gen X with a non-elite loyalty level.",
-      "time": 6.199400424957275,
+      "model": "Groq",
+      "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
+      "response": "The flight numbers of the journeys that depart from LAX and arrive at IAX and have generation 'Millennials' are:\n\n* Flight 2411\n* Flight 1636\n* Flight 388 \n* Flight 1681\n* Flight 2367\n* Flight 1428\n* Flight 1427\n* Flight 2035\n* Flight 1947\n* Flight 251\n* Flight 1282\n* Flight 1283 \n* Flight 1729\n* Flight 2436\n* Flight 252\n* Flight 2367\n* Flight 2039\n* Flight 2035 \n\nNote that there are multiple flights that match the given criteria. The answer is not unique.",
+      "time": 34.690988540649414,
       "success": true,
       "error": null,
-      "tokens_estimate": 72
+      "tokens_estimate": 89
     },
     {
-      "model": "Groq",
+      "model": "Mistral",
       "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
-      "response": "For a journey that has flight number 2, the different loyalty program levels mentioned are:\n\n1. Non-elite loyalty level\n2. Premier Silver loyalty level \n\nThese are the loyalty levels mentioned for Flight 2 in the provided context.",
-      "time": 36.74172925949097,
+      "response": " Based on the context provided, there are two journeys with flight number 2, and each of them has a different passenger with a different loyalty level. Here are the loyalty levels for both journeys:\n\n1. Passenger is a Gen X with a non-elite loyalty level.\n2. Passenger is a Gen X with a non-elite loyalty level.",
+      "time": 8.040827989578247,
       "success": true,
       "error": null,
-      "tokens_estimate": 37
+      "tokens_estimate": 56
     },
     {
       "model": "Gemini",
       "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
-      "response": "The loyalty levels for passengers on Flight 2 from SFX to SIX are premier silver and non-elite.",
-      "time": 2.4042038917541504,
+      "response": "The loyalty program levels for passengers on Flight 2 from SFX to SIX are premier silver and non-elite.",
+      "time": 3.508009195327759,
       "success": true,
       "error": null,
-      "tokens_estimate": 17
+      "tokens_estimate": 18
+    },
+    {
+      "model": "Groq",
+      "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
+      "response": "For a journey that has flight number 2, the different loyalty program levels mentioned are:\n\n1. Non-elite loyalty level (mentioned in records 1 and 27)\n2. Premier Silver loyalty level (not mentioned)\n3. Premier Platinum loyalty level (not mentioned)\n4. Premier 1K loyalty level (not mentioned)\n\nOnly non-elite loyalty level is mentioned for flight number 2. However, other loyalty levels are mentioned in the context for different flight numbers. \n\nThe loyalty levels mentioned in the context for different flight numbers are:\n1. Non-elite loyalty level\n2. Premier Silver loyalty level (mentioned in records 6, 1075, 972, and 1189)\n3. Premier Platinum loyalty level (mentioned in records 5, 17, 323, and 2610)\n4. Premier 1K loyalty level (mentioned in records 3, 10, 1229, 2682, and 5214)\n5. Premier Gold loyalty level (mentioned in records 384, 1027, 1413, and 423)",
+      "time": 35.18397068977356,
+      "success": true,
+      "error": null,
+      "tokens_estimate": 138
     }
   ],
-  "qualitative_results": []
+  "qualitative_results": [
+    {
+      "question": "What are the top 5 airports with the most delays?",
+      "responses": {
+        "Mistral": " Based on the context provided, the top 5 airports with the most accumulated arrival delay minutes are: CDX, JAX, SIX, FRX, and MUX.",
+        "Gemini": "The top 5 destination stations with the highest accumulated arrival delay minutes are: CDX (991), JAX (810), SIX (661), FRX (462), and MUX (326).\nThe top 5 origin stations with the highest accumulated arrival delay minutes are: DEX (1634), EWX (964), MUX (522), SFX (302), and RSX (269).",
+        "Groq": "To answer the user's question, we need to analyze the provided context. The context provides two types of information: \n\n1. Structured query results for the top 5 destination and origin stations with the highest accumulated arrival delay minutes.\n2. Semantic search results for Journey and Flight records.\n\nFrom the structured query results, we can see the top 5 destination stations with the highest accumulated arrival delay minutes:\n- CDX: 991 minutes\n- JAX: 810 minutes\n- SIX: 661 minutes\n- FRX: 462 minutes\n- MUX: 326 minutes\n\nAnd the top 5 origin stations with the highest accumulated arrival delay minutes:\n- DEX: 1634 minutes\n- EWX: 964 minutes\n- MUX: 522 minutes\n- SFX: 302 minutes\n- RSX: 269 minutes\n\nHowever, the user's question asks for the top 5 airports with the most delays, which can be interpreted as the airports with the highest total delay minutes, regardless of whether they are origin or destination airports.\n\nCombining the information from both origin and destination stations, we can calculate the total delay minutes for each airport:\n- DEX: 1634 minutes (origin) + no data available for destination\n- CDX: 991 minutes (destination) + no data available for origin\n- JAX: 810 minutes (destination) + no data available for origin\n- SIX: 661 minutes (destination) + no data available for origin\n- EWX: 964 minutes (origin) + no data available for destination\n- MUX: 522 minutes (origin) + 326 minutes (destination) = 848 minutes\n- FRX: 462 minutes (destination) + no data available for origin\n- SFX: 302 minutes (origin) + no data available for destination\n- RSX: 269 minutes (origin) + no data available for destination\n\nBased on the available data, the top 5 airports with the most delays are:\n1. DEX: 1634 minutes\n2. EWX: 964 minutes\n3. CDX: 991 minutes\n4. MUX: 848 minutes (combined origin and destination)\n5. JAX: 810 minutes\n\nNote: The actual ranking might be different if we had the complete data for both origin and destination delay minutes for all airports."
+      },
+      "evaluation": {
+        "evaluations": {
+          "Mistral": {
+            "relevance": 2,
+            "completeness": 1,
+            "naturalness": 3,
+            "total": 6,
+            "reasoning": "Lacks specific delay minutes and does not distinguish between origin and destination airports."
+          },
+          "Gemini": {
+            "relevance": 4,
+            "completeness": 4,
+            "naturalness": 4,
+            "total": 12,
+            "reasoning": "Provides delay minutes for top 5 destination and origin stations but does not combine them to answer the question directly."
+          },
+          "Groq": {
+            "relevance": 5,
+            "completeness": 5,
+            "naturalness": 5,
+            "total": 15,
+            "reasoning": "Directly answers the question by combining origin and destination delay minutes for a comprehensive ranking."
+          }
+        },
+        "winner": "Groq",
+        "summary": "Groq provides the most relevant, complete, and natural response by directly addressing the question with a comprehensive analysis of airport delays."
+      }
+    },
+    {
+      "question": "How do Millennials travel compared to Baby Boomers?",
+      "responses": {
+        "Mistral": " According to the provided context, Millennials and Baby Boomers both use the Boeing 737-900 aircraft type frequently, but the Baby Boomer generation uses it more often for journeys exceeding 1000 miles. The most common fleet type for both generations is the Boeing 737-900. The top 5 destination stations for Millennials based on passenger volume are IAX, EWX, DEX, ORX, and SFX. For Baby Boomers, the top 5 destination stations are EWX, IAX, DEX, ORX, and SFX. However, the passenger volumes at these destinations are higher for Baby Boomers compared to Millennials.\n\nThe context does not provide information about the travel frequency, distance, or preferences between Millennials and Baby Boomers. Therefore, it's not possible to make a definitive statement about how Millennials travel compared to Baby Boomers based on the provided context alone.",
+        "Gemini": "Here's a comparison of how Millennials and Baby Boomers travel, based on the provided data:\n\n*   **Most Common Aircraft (Journeys > 1000 miles):** Both Millennials and Boomers most commonly use the B737-900.\n*   **Most Frequent Fleet Type:** Both Millennials and Boomers most frequently use the B737-900.\n*   **Top 5 Destinations:**\n    *   **Millennials:** IAX, EWX, DEX, ORX, SFX\n    *   **Boomers:** EWX, IAX, DEX, ORX, SFX",
+        "Groq": "Based on the provided context, here are some key differences in travel patterns between Millennials and Baby Boomers:\n\n1. **Aircraft type preference**: Both Millennials and Baby Boomers prefer the B737-900 aircraft type for journeys exceeding 1000 miles, with usage counts of 50 and 154, respectively.\n2. **Fleet type preference**: Both generations also prefer the B737-900 fleet type, with usage counts of 72 for Millennials and 212 for Baby Boomers.\n3. **Destination stations**: The top 5 destination stations for Millennials are IAX, EWX, DEX, ORX, and SFX, while for Baby Boomers, they are EWX, IAX, DEX, ORX, and SFX. Although the stations are similar, the order of preference differs.\n4. **Passenger volume**: Baby Boomers have a significantly higher passenger volume than Millennials, with 269 passengers at EWX (the top destination for Boomers) compared to 75 passengers at IAX (the top destination for Millennials).\n\nThese differences suggest that while both generations share some similarities in their travel preferences, Baby Boomers tend to travel more frequently and in larger numbers than Millennials. However, more data would be needed to draw definitive conclusions about their travel habits."
+      },
+      "evaluation": {
+        "evaluations": {
+          "Mistral": {
+            "relevance": 2,
+            "completeness": 3,
+            "naturalness": 4,
+            "total": 9,
+            "reasoning": "Mistral's response is partially relevant but lacks completeness in directly comparing Millennials and Baby Boomers' travel habits."
+          },
+          "Gemini": {
+            "relevance": 4,
+            "completeness": 3,
+            "naturalness": 4,
+            "total": 11,
+            "reasoning": "Gemini provides a clear comparison but misses out on deeper insights into the differences or similarities beyond the most common aircraft and destinations."
+          },
+          "Groq": {
+            "relevance": 5,
+            "completeness": 5,
+            "naturalness": 5,
+            "total": 15,
+            "reasoning": "Groq's response is highly relevant, complete, and naturally written, offering a detailed comparison of travel patterns between Millennials and Baby Boomers."
+          }
+        },
+        "winner": "Groq",
+        "summary": "Groq outperforms Mistral and Gemini by providing a detailed and direct comparison of how Millennials and Baby Boomers travel."
+      }
+    },
+    {
+      "question": "Which aircraft type has the best on-time performance?",
+      "responses": {
+        "Mistral": " Based on the context provided, the top 5 aircraft types with the LOWEST average arrival delay are: B767-400, B737-MAX9, ERJ-170, B737-900, and B787-10. The first one, B767-400, has the LOWEST average delay (-8.16 minutes). Therefore, the aircraft type with the best on-time performance is the B767-400.",
+        "Gemini": "Here are the top 5 aircraft types by on-time arrival percentage:\n- B737-MAX9, on_time_pct: 80.77\n- B757-300, on_time_pct: 80.00\n- ERJ-170, on_time_pct: 78.00\n- B737-MAX8, on_time_pct: 76.92\n- ERJ-175, on_time_pct: 75.80",
+        "Groq": "The B767-400 has the best on-time performance with an average arrival delay of -8.16 minutes, indicating that on average, flights operated by this aircraft type arrive 8.16 minutes early."
+      },
+      "evaluation": {
+        "evaluations": {
+          "Mistral": {
+            "relevance": 5,
+            "completeness": 5,
+            "naturalness": 4,
+            "total": 14,
+            "reasoning": "Directly answers the question, provides the top 5 aircraft types, and explains the metric used."
+          },
+          "Gemini": {
+            "relevance": 5,
+            "completeness": 4,
+            "naturalness": 4,
+            "total": 13,
+            "reasoning": "Provides a clear list of top 5 aircraft types by on-time arrival percentage, but lacks explanation of the metric."
+          },
+          "Groq": {
+            "relevance": 5,
+            "completeness": 3,
+            "naturalness": 5,
+            "total": 13,
+            "reasoning": "Directly answers the question, but only provides information about the top aircraft type without additional context."
+          }
+        },
+        "winner": "Mistral",
+        "summary": "Mistral provides the most comprehensive and relevant response, directly answering the question and providing additional context about the top 5 aircraft types."
+      }
+    },
+    {
+      "question": "What is the flight number of the journey that departs from LAX and arrives at IAX and has generation 'Millennials'?",
+      "responses": {
+        "Mistral": " Based on the context, there are several flights that match the given criteria. Here are some of them with their scores and flight numbers:\n\n1. (score: 0.876) Flight 2411 operated by B777-200.\n2. (score: 0.873) Flight 2411 operated by B777-200.\n3. (score: 0.844) Flight 2330 operated by A319-100.\n4. (score: 0.838) Flight 2380 operated by A320-200.\n5. (score: 0.838) Flight 252 operated by B737-800.\n\nYou can choose any of these flights based on your preference, but I recommend checking the specific flight details to ensure it meets all your requirements before making a decision.",
+        "Gemini": "Here are some flights from LAX to IAX with Millennial passengers: Flight 2411, Flight 1636, Flight 1414, Flight 2281, Flight 388, Flight 1681, Flight 500, and Flight 2391.",
+        "Groq": "The flight numbers of the journeys that depart from LAX and arrive at IAX and have generation 'Millennials' are:\n\n* Flight 2411\n* Flight 1636\n* Flight 388 \n* Flight 1681\n* Flight 2367\n* Flight 1428\n* Flight 1427\n* Flight 2035\n* Flight 1947\n* Flight 251\n* Flight 1282\n* Flight 1283 \n* Flight 1729\n* Flight 2436\n* Flight 252\n* Flight 2367\n* Flight 2039\n* Flight 2035 \n\nNote that there are multiple flights that match the given criteria. The answer is not unique."
+      },
+      "evaluation": {
+        "evaluations": {
+          "Mistral": {
+            "relevance": 4,
+            "completeness": 4,
+            "naturalness": 5,
+            "total": 13,
+            "reasoning": "Mistral provides relevant and complete information with a natural tone, but includes extra details about scores and recommendations."
+          },
+          "Gemini": {
+            "relevance": 5,
+            "completeness": 3,
+            "naturalness": 4,
+            "total": 12,
+            "reasoning": "Gemini directly answers the question but lacks completeness and has a somewhat natural tone."
+          },
+          "Groq": {
+            "relevance": 5,
+            "completeness": 5,
+            "naturalness": 3,
+            "total": 13,
+            "reasoning": "Groq provides the most complete answer but has a less natural tone due to the lengthy list without additional context."
+          }
+        },
+        "winner": "Groq",
+        "summary": "Groq is the winner due to its high completeness, despite having a less natural tone compared to Mistral and Gemini."
+      }
+    },
+    {
+      "question": "What are the different loyalty program levels for a journey that has flight number 2, mention all of them",
+      "responses": {
+        "Mistral": " Based on the context provided, there are two journeys with flight number 2, and each of them has a different passenger with a different loyalty level. Here are the loyalty levels for both journeys:\n\n1. Passenger is a Gen X with a non-elite loyalty level.\n2. Passenger is a Gen X with a non-elite loyalty level.",
+        "Gemini": "The loyalty program levels for passengers on Flight 2 from SFX to SIX are premier silver and non-elite.",
+        "Groq": "For a journey that has flight number 2, the different loyalty program levels mentioned are:\n\n1. Non-elite loyalty level (mentioned in records 1 and 27)\n2. Premier Silver loyalty level (not mentioned)\n3. Premier Platinum loyalty level (not mentioned)\n4. Premier 1K loyalty level (not mentioned)\n\nOnly non-elite loyalty level is mentioned for flight number 2. However, other loyalty levels are mentioned in the context for different flight numbers. \n\nThe loyalty levels mentioned in the context for different flight numbers are:\n1. Non-elite loyalty level\n2. Premier Silver loyalty level (mentioned in records 6, 1075, 972, and 1189)\n3. Premier Platinum loyalty level (mentioned in records 5, 17, 323, and 2610)\n4. Premier 1K loyalty level (mentioned in records 3, 10, 1229, 2682, and 5214)\n5. Premier Gold loyalty level (mentioned in records 384, 1027, 1413, and 423)"
+      },
+      "evaluation": {
+        "evaluations": {
+          "Mistral": {
+            "relevance": 2,
+            "completeness": 2,
+            "naturalness": 4,
+            "total": 8,
+            "reasoning": "Mistral's response is somewhat relevant but lacks completeness as it only mentions non-elite loyalty levels without considering other possible levels."
+          },
+          "Gemini": {
+            "relevance": 5,
+            "completeness": 4,
+            "naturalness": 5,
+            "total": 14,
+            "reasoning": "Gemini's response is directly relevant, fairly complete, and well-written, mentioning two loyalty program levels for Flight 2."
+          },
+          "Groq": {
+            "relevance": 4,
+            "completeness": 5,
+            "naturalness": 3,
+            "total": 12,
+            "reasoning": "Groq's response is relevant and thorough, mentioning various loyalty levels, but its naturalness is affected by the detailed and somewhat awkward presentation."
+          }
+        },
+        "winner": "Gemini",
+        "summary": "Gemini provides the most relevant and naturally written response, although Groq offers more completeness in its answer."
+      }
+    }
+  ]
 }
