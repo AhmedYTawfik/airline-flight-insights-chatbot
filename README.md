@@ -60,7 +60,11 @@ The app also accepts legacy aliases:
 ## Neo4j data model & indexes
 Load the airline knowledge graph into Neo4j with these labels and relationships:
 - **Labels**: `Airport`, `Flight`, `Journey`, `Passenger`
-- **Relationships**: `(:Flight)-[:DEPARTS_FROM]->(:Airport)`, `(:Flight)-[:ARRIVES_AT]->(:Airport)`, `(:Journey)-[:ON]->(:Flight)`, `(:Passenger)-[:TOOK]->(:Journey)`
+- **Relationships**:
+  - `(:Flight)-[:DEPARTS_FROM]->(:Airport)`
+  - `(:Flight)-[:ARRIVES_AT]->(:Airport)`
+  - `(:Journey)-[:ON]->(:Flight)`
+  - `(:Passenger)-[:TOOK]->(:Journey)`
 
 For embedding retrieval, create vector indexes and store embeddings on nodes:
 - `journey_embedding_minilm` on `Journey.embedding_minilm` (384 dims)
