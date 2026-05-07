@@ -70,6 +70,14 @@ For embedding retrieval, create vector indexes and store embeddings on nodes:
 
 When creating indexes, match the dimensions and use a similarity metric that aligns with your embedding model (commonly cosine).
 
+Example (adjust label, property, and dimensions for each index):
+```cypher
+CREATE VECTOR INDEX journey_embedding_minilm
+FOR (j:Journey)
+ON (j.embedding_minilm)
+OPTIONS {indexConfig: {`vector.dimensions`: 384, `vector.similarity_function`: 'cosine'}};
+```
+
 If embeddings are not available, select **Cypher Only** in the UI.
 
 ## Run the app
@@ -90,4 +98,4 @@ Descriptions/                  Project requirements and milestone docs
 The `notebooks/` folder contains experiments for embeddings and LLM comparison plus a main workflow notebook.
 
 ## License
-MIT (see [LICENSE](LICENSE)).
+MIT (see [LICENSE](./LICENSE)).
