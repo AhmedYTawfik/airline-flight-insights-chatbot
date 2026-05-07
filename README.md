@@ -95,7 +95,12 @@ Descriptions/                  Project requirements and milestone docs
 ```
 
 ## Notebooks
-The `notebooks/` folder contains experiments for embeddings and LLM comparison plus a main workflow notebook.
+The `notebooks/` folder includes:
+- `main.ipynb`: end-to-end workflow and data exploration
+- `embeddings_demo.ipynb`: embedding generation and retrieval demo
+- `embedding_comparison.ipynb`: embedding model comparison
+- `LLM.ipynb`: LLM experiments and prompt testing
+- `llm_comparison_results.json`: saved LLM comparison results
 
 ## License
 MIT (see [LICENSE](./LICENSE)).
