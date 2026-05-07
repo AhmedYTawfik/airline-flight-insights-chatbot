@@ -51,7 +51,11 @@ Set environment variables (a `.env` file is supported via `python-dotenv`):
 | `GOOGLE_API_KEY` | Gemini API key |
 | `HUGGINGFACEHUB_API_TOKEN` | Optional, enables Hugging Face models |
 
-The app also accepts legacy aliases: `URI` → `NEO4J_URI`, `USERNAME` → `NEO4J_USERNAME`, `PASSWORD` → `NEO4J_PASSWORD`, `GROQ` → `GROQ_API_KEY`.
+The app also accepts legacy aliases:
+- `URI` → `NEO4J_URI`
+- `USERNAME` → `NEO4J_USERNAME`
+- `PASSWORD` → `NEO4J_PASSWORD`
+- `GROQ` → `GROQ_API_KEY`
 
 ## Neo4j data model & indexes
 Load the airline knowledge graph into Neo4j with these labels and relationships:
@@ -63,6 +67,8 @@ For embedding retrieval, create vector indexes and store embeddings on nodes:
 - `journey_embedding_mpnet` on `Journey.embedding_mpnet` (768 dims)
 - `flight_embedding_minilm` on `Flight.embedding_minilm` (384 dims)
 - `flight_embedding_mpnet` on `Flight.embedding_mpnet` (768 dims)
+
+When creating indexes, match the dimensions and use a similarity metric that aligns with your embedding model (commonly cosine).
 
 If embeddings are not available, select **Cypher Only** in the UI.
 
