@@ -23,7 +23,7 @@ AI-powered flight data analysis using Graph-RAG, Neo4j, and Streamlit. This proj
 ## Setup
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -39,7 +39,7 @@ Set environment variables (a `.env` file is supported via `python-dotenv`):
 | `GOOGLE_API_KEY` | Gemini API key |
 | `HUGGINGFACEHUB_API_TOKEN` | Optional, enables Hugging Face models |
 
-The app also accepts legacy aliases: `URI`, `USERNAME`, `PASSWORD`, `GROQ`.
+The app also accepts legacy aliases: `URI` → `NEO4J_URI`, `USERNAME` → `NEO4J_USERNAME`, `PASSWORD` → `NEO4J_PASSWORD`, `GROQ` → `GROQ_API_KEY`.
 
 ## Neo4j data model & indexes
 Load the airline knowledge graph into Neo4j with these labels and relationships:
