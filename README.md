@@ -23,7 +23,19 @@ AI-powered flight data analysis using Graph-RAG, Neo4j, and Streamlit. This proj
 ## Setup
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+```
+
+```bash
+# macOS/Linux
+source .venv/bin/activate
+```
+
+```powershell
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+```
+
+```bash
 pip install -r requirements.txt
 ```
 
@@ -31,7 +43,7 @@ pip install -r requirements.txt
 Set environment variables (a `.env` file is supported via `python-dotenv`):
 
 | Variable | Description |
-| --- | --- |
+| -------- | ----------- |
 | `NEO4J_URI` | Neo4j connection URI (bolt or neo4j scheme) |
 | `NEO4J_USERNAME` | Neo4j username |
 | `NEO4J_PASSWORD` | Neo4j password |
